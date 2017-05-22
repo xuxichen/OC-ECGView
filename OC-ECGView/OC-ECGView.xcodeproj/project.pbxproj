@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF8E7D471ED2FFBD009199C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D461ED2FFBD009199C5 /* main.m */; };
+		DF8E7D4A1ED2FFBD009199C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D491ED2FFBD009199C5 /* AppDelegate.m */; };
+		DF8E7D4D1ED2FFBD009199C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D4C1ED2FFBD009199C5 /* ViewController.m */; };
+		DF8E7D501ED2FFBD009199C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8E7D4E1ED2FFBD009199C5 /* Main.storyboard */; };
+		DF8E7D521ED2FFBD009199C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8E7D511ED2FFBD009199C5 /* Assets.xcassets */; };
+		DF8E7D551ED2FFBD009199C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8E7D531ED2FFBD009199C5 /* LaunchScreen.storyboard */; };
+		DF8E7D601ED2FFBD009199C5 /* OC_ECGViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D5F1ED2FFBD009199C5 /* OC_ECGViewTests.m */; };
+		DF8E7D6B1ED2FFBD009199C5 /* OC_ECGViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D6A1ED2FFBD009199C5 /* OC_ECGViewUITests.m */; };
+		DF8E7D7C1ED30075009199C5 /* ECGView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D791ED30075009199C5 /* ECGView.m */; };
+		DF8E7D7D1ED30075009199C5 /* UIView+XZWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E7D7B1ED30075009199C5 /* UIView+XZWExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF8E7D5C1ED2FFBD009199C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF8E7D3A1ED2FFBD009199C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF8E7D411ED2FFBD009199C5;
+			remoteInfo = "OC-ECGView";
+		};
+		DF8E7D671ED2FFBD009199C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF8E7D3A1ED2FFBD009199C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF8E7D411ED2FFBD009199C5;
+			remoteInfo = "OC-ECGView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF8E7D421ED2FFBD009199C5 /* OC-ECGView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC-ECGView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8E7D461ED2FFBD009199C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF8E7D481ED2FFBD009199C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF8E7D491ED2FFBD009199C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF8E7D4B1ED2FFBD009199C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF8E7D4C1ED2FFBD009199C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF8E7D4F1ED2FFBD009199C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF8E7D511ED2FFBD009199C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF8E7D541ED2FFBD009199C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF8E7D561ED2FFBD009199C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF8E7D5B1ED2FFBD009199C5 /* OC-ECGViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OC-ECGViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8E7D5F1ED2FFBD009199C5 /* OC_ECGViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OC_ECGViewTests.m; sourceTree = "<group>"; };
+		DF8E7D611ED2FFBD009199C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF8E7D661ED2FFBD009199C5 /* OC-ECGViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OC-ECGViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8E7D6A1ED2FFBD009199C5 /* OC_ECGViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OC_ECGViewUITests.m; sourceTree = "<group>"; };
+		DF8E7D6C1ED2FFBD009199C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF8E7D781ED30075009199C5 /* ECGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGView.h; sourceTree = "<group>"; };
+		DF8E7D791ED30075009199C5 /* ECGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGView.m; sourceTree = "<group>"; };
+		DF8E7D7A1ED30075009199C5 /* UIView+XZWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XZWExtension.h"; sourceTree = "<group>"; };
+		DF8E7D7B1ED30075009199C5 /* UIView+XZWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XZWExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF8E7D3F1ED2FFBD009199C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8E7D581ED2FFBD009199C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8E7D631ED2FFBD009199C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF8E7D391ED2FFBD009199C5 = {
+			isa = PBXGroup;
+			children = (
+				DF8E7D441ED2FFBD009199C5 /* OC-ECGView */,
+				DF8E7D5E1ED2FFBD009199C5 /* OC-ECGViewTests */,
+				DF8E7D691ED2FFBD009199C5 /* OC-ECGViewUITests */,
+				DF8E7D431ED2FFBD009199C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF8E7D431ED2FFBD009199C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF8E7D421ED2FFBD009199C5 /* OC-ECGView.app */,
+				DF8E7D5B1ED2FFBD009199C5 /* OC-ECGViewTests.xctest */,
+				DF8E7D661ED2FFBD009199C5 /* OC-ECGViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF8E7D441ED2FFBD009199C5 /* OC-ECGView */ = {
+			isa = PBXGroup;
+			children = (
+				DF8E7D481ED2FFBD009199C5 /* AppDelegate.h */,
+				DF8E7D491ED2FFBD009199C5 /* AppDelegate.m */,
+				DF8E7D4B1ED2FFBD009199C5 /* ViewController.h */,
+				DF8E7D4C1ED2FFBD009199C5 /* ViewController.m */,
+				DF8E7D781ED30075009199C5 /* ECGView.h */,
+				DF8E7D791ED30075009199C5 /* ECGView.m */,
+				DF8E7D7A1ED30075009199C5 /* UIView+XZWExtension.h */,
+				DF8E7D7B1ED30075009199C5 /* UIView+XZWExtension.m */,
+				DF8E7D4E1ED2FFBD009199C5 /* Main.storyboard */,
+				DF8E7D511ED2FFBD009199C5 /* Assets.xcassets */,
+				DF8E7D531ED2FFBD009199C5 /* LaunchScreen.storyboard */,
+				DF8E7D561ED2FFBD009199C5 /* Info.plist */,
+				DF8E7D451ED2FFBD009199C5 /* Supporting Files */,
+			);
+			path = "OC-ECGView";
+			sourceTree = "<group>";
+		};
+		DF8E7D451ED2FFBD009199C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF8E7D461ED2FFBD009199C5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF8E7D5E1ED2FFBD009199C5 /* OC-ECGViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF8E7D5F1ED2FFBD009199C5 /* OC_ECGViewTests.m */,
+				DF8E7D611ED2FFBD009199C5 /* Info.plist */,
+			);
+			path = "OC-ECGViewTests";
+			sourceTree = "<group>";
+		};
+		DF8E7D691ED2FFBD009199C5 /* OC-ECGViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF8E7D6A1ED2FFBD009199C5 /* OC_ECGViewUITests.m */,
+				DF8E7D6C1ED2FFBD009199C5 /* Info.plist */,
+			);
+			path = "OC-ECGViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF8E7D411ED2FFBD009199C5 /* OC-ECGView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF8E7D6F1ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGView" */;
+			buildPhases = (
+				DF8E7D3E1ED2FFBD009199C5 /* Sources */,
+				DF8E7D3F1ED2FFBD009199C5 /* Frameworks */,
+				DF8E7D401ED2FFBD009199C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OC-ECGView";
+			productName = "OC-ECGView";
+			productReference = DF8E7D421ED2FFBD009199C5 /* OC-ECGView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF8E7D5A1ED2FFBD009199C5 /* OC-ECGViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF8E7D721ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGViewTests" */;
+			buildPhases = (
+				DF8E7D571ED2FFBD009199C5 /* Sources */,
+				DF8E7D581ED2FFBD009199C5 /* Frameworks */,
+				DF8E7D591ED2FFBD009199C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF8E7D5D1ED2FFBD009199C5 /* PBXTargetDependency */,
+			);
+			name = "OC-ECGViewTests";
+			productName = "OC-ECGViewTests";
+			productReference = DF8E7D5B1ED2FFBD009199C5 /* OC-ECGViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF8E7D651ED2FFBD009199C5 /* OC-ECGViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF8E7D751ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGViewUITests" */;
+			buildPhases = (
+				DF8E7D621ED2FFBD009199C5 /* Sources */,
+				DF8E7D631ED2FFBD009199C5 /* Frameworks */,
+				DF8E7D641ED2FFBD009199C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF8E7D681ED2FFBD009199C5 /* PBXTargetDependency */,
+			);
+			name = "OC-ECGViewUITests";
+			productName = "OC-ECGViewUITests";
+			productReference = DF8E7D661ED2FFBD009199C5 /* OC-ECGViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF8E7D3A1ED2FFBD009199C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "徐子文";
+				TargetAttributes = {
+					DF8E7D411ED2FFBD009199C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					DF8E7D5A1ED2FFBD009199C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF8E7D411ED2FFBD009199C5;
+					};
+					DF8E7D651ED2FFBD009199C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF8E7D411ED2FFBD009199C5;
+					};
+				};
+			};
+			buildConfigurationList = DF8E7D3D1ED2FFBD009199C5 /* Build configuration list for PBXProject "OC-ECGView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF8E7D391ED2FFBD009199C5;
+			productRefGroup = DF8E7D431ED2FFBD009199C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF8E7D411ED2FFBD009199C5 /* OC-ECGView */,
+				DF8E7D5A1ED2FFBD009199C5 /* OC-ECGViewTests */,
+				DF8E7D651ED2FFBD009199C5 /* OC-ECGViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF8E7D401ED2FFBD009199C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8E7D551ED2FFBD009199C5 /* LaunchScreen.storyboard in Resources */,
+				DF8E7D521ED2FFBD009199C5 /* Assets.xcassets in Resources */,
+				DF8E7D501ED2FFBD009199C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8E7D591ED2FFBD009199C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8E7D641ED2FFBD009199C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF8E7D3E1ED2FFBD009199C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8E7D4D1ED2FFBD009199C5 /* ViewController.m in Sources */,
+				DF8E7D4A1ED2FFBD009199C5 /* AppDelegate.m in Sources */,
+				DF8E7D7C1ED30075009199C5 /* ECGView.m in Sources */,
+				DF8E7D7D1ED30075009199C5 /* UIView+XZWExtension.m in Sources */,
+				DF8E7D471ED2FFBD009199C5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8E7D571ED2FFBD009199C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8E7D601ED2FFBD009199C5 /* OC_ECGViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8E7D621ED2FFBD009199C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8E7D6B1ED2FFBD009199C5 /* OC_ECGViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF8E7D5D1ED2FFBD009199C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF8E7D411ED2FFBD009199C5 /* OC-ECGView */;
+			targetProxy = DF8E7D5C1ED2FFBD009199C5 /* PBXContainerItemProxy */;
+		};
+		DF8E7D681ED2FFBD009199C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF8E7D411ED2FFBD009199C5 /* OC-ECGView */;
+			targetProxy = DF8E7D671ED2FFBD009199C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF8E7D4E1ED2FFBD009199C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF8E7D4F1ED2FFBD009199C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF8E7D531ED2FFBD009199C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF8E7D541ED2FFBD009199C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF8E7D6D1ED2FFBD009199C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF8E7D6E1ED2FFBD009199C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF8E7D701ED2FFBD009199C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "OC-ECGView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF8E7D711ED2FFBD009199C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "OC-ECGView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF8E7D731ED2FFBD009199C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "OC-ECGViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OC-ECGView.app/OC-ECGView";
+			};
+			name = Debug;
+		};
+		DF8E7D741ED2FFBD009199C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "OC-ECGViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OC-ECGView.app/OC-ECGView";
+			};
+			name = Release;
+		};
+		DF8E7D761ED2FFBD009199C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "OC-ECGViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OC-ECGView";
+			};
+			name = Debug;
+		};
+		DF8E7D771ED2FFBD009199C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "OC-ECGViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OC-ECGView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF8E7D3D1ED2FFBD009199C5 /* Build configuration list for PBXProject "OC-ECGView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF8E7D6D1ED2FFBD009199C5 /* Debug */,
+				DF8E7D6E1ED2FFBD009199C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF8E7D6F1ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF8E7D701ED2FFBD009199C5 /* Debug */,
+				DF8E7D711ED2FFBD009199C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF8E7D721ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF8E7D731ED2FFBD009199C5 /* Debug */,
+				DF8E7D741ED2FFBD009199C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF8E7D751ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF8E7D761ED2FFBD009199C5 /* Debug */,
+				DF8E7D771ED2FFBD009199C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF8E7D3A1ED2FFBD009199C5 /* Project object */;
+}
