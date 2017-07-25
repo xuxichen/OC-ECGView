@@ -2383,7 +2383,7 @@
         431
     };
     _dataArr = [[NSMutableArray alloc]init];
-    for (int i = 0; i < 2345; i ++) {
+    for (int i = 0; i < sizeof(data)/sizeof(data[0]); i ++) {
         [_dataArr addObject:[NSNumber numberWithInt:data[i]]];
     }
 }

@@ -6,6 +6,7 @@
 }
 </code></pre>
 这个方法来实现的，在这个方法中取得context这个图形上下文然后用这个context来绘制，这种方法在逻辑上是没有问题的，但如果各位同学细心一点，应该会发现，复写了 **- (void)drawRect:(CGRect )rect** 这个方法后，在运行的的时候，当跳转到这个view的时候，运行内存会暴增80M左右，当项目工程过大的时候，本身工程运行内存就很大了，再爆增80M的情况下会有一定几率Crash。
+
 ##效果图如下
 
 ![示意图](https://github.com/xuxichen/OC-ECGView/raw/master/Demo.gif)

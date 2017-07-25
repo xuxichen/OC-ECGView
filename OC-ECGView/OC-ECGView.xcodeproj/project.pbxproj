@@ -439,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OC-ECGView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OC-ECGView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Chad.www.OC-ECGView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,6 +523,7 @@
 				DF8E7D711ED2FFBD009199C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF8E7D721ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGViewTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +532,7 @@
 				DF8E7D741ED2FFBD009199C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF8E7D751ED2FFBD009199C5 /* Build configuration list for PBXNativeTarget "OC-ECGViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +541,7 @@
 				DF8E7D771ED2FFBD009199C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -69,7 +69,10 @@
 - (void)setEcgArray:(NSArray *)ecgArray {
     
     _ecgArray = ecgArray;
-    
+    //当输入数组元素个数少于视图的self.width的值时，调整self.pointMartin的值，拉长数组中元素个数的两点之间的间隔，让折线拉长到整个View的宽度
+    if (_ecgArray.count < self.width) {
+        self.pointMartin = self.width / _ecgArray.count;
+    }
     //求出数组中的最大值和最小值相减得出折线的绝对振幅是多大，然后用绝对振幅和屏幕的高的的一部分（比如0.618，随便你取，主要是为了整体协调好看）做比较得出相对振幅的比例因子scaleValue
     CGFloat min = [[_ecgArray valueForKeyPath:@"@min.floatValue"] floatValue];
     CGFloat max = [[_ecgArray valueForKeyPath:@"@max.floatValue"] floatValue];
