@@ -14,7 +14,7 @@
 ##代码分析
 虽然这个是个很简单的demo，但为了让各位同学节省更多的时间，我还是写一下代码分析，让初学者或者急用的人能更快的使用这个demo到自己的项目中去
 ####背景格子
-<pre><code>
+`<pre><code>
 //网格分为四种线画成，一种为0.2的横线，一种为0.2的竖线，一种为0.1的横线，一种为0.1的竖线
 - (void)drawGrid {
 
@@ -27,24 +27,24 @@
         [self drawLineStartPoint:CGPointMake(pos_x, 1) toEndPoint:CGPointMake(pos_x, full_height) withLineWidth:0.2];
         pos_x += _pixelsPerCell;
     }
-    
+
     CGFloat pos_y = 1;
     while (pos_y < full_height) {
         [self drawLineStartPoint:CGPointMake(full_width, pos_y) toEndPoint:CGPointMake(1, pos_y) withLineWidth:0.2];
         pos_y += _pixelsPerCell;
     }
-    
+
     float cell_squar = 0.00;
-    
+
     cell_squar = _pixelsPerCell / 5.00;
-    
+
     pos_x = 1 + cell_squar;
-    
+
     while (pos_x < full_width) {
         [self drawLineStartPoint:CGPointMake(pos_x, 1) toEndPoint:CGPointMake(pos_x, full_height) withLineWidth:0.1];
         pos_x += cell_squar;
     }
-    
+
     pos_y = 1;
     while (pos_y < full_height) {
         [self drawLineStartPoint:CGPointMake(1, pos_y) toEndPoint:CGPointMake(full_width, pos_y) withLineWidth:0.1];
@@ -69,7 +69,7 @@
 而这个方法中设置了bezierpath的相关属性和设置shapelayer相关属性你可以在代码中demo中按住command+左键跳转到这个方法里面查看相关属性的设置
 ####绘制心电图折线
 绘制心电图折线，则是根据传进来的数组来进行处理。然后把这个传进来的数组，按照七个七个的取出来添加到另外一个数组中去，（为什么是七个呢？其实随便多少个都行，只要不是大于数组或者小于零就行，但是为了图像显示的效果最好是六七个，最重要的是：***这个数一定要能整除你输入的数组的个数***）,然后根据这个小的数组，通过计算得到相对应的坐标，通过CAShapeLayer和UIBezierPath把这些坐标点绘制到屏幕上去。
-<pre><code>
+·<pre><code>
 //绘制折线
 - (void)drawCurve {
     //清除掉bezierpath原来的所有坐标点
@@ -99,7 +99,7 @@
     }else {
         self.drawNumbers = 0;
     }
-    /\* 
+    /\*
      根据self.lineArray数组中的每个值计算出一个相应的CGPoint，然后把这些坐标点绘制到self上
      \*/
     CGFloat firstpointY = self.height\*0.618 - (CGFloat)[self.lineArray[0] floatValue]\*\_scaleValue;
@@ -116,5 +116,5 @@
     }
     [self.layer addSublayer:self.shapelayer];
 }
-</code></pre>
+</code></pre>`
 这段代码中的相关注释做的比较详细，就不做更多介绍了。
