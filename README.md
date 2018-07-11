@@ -7,14 +7,14 @@
 </code></pre>
 这个方法来实现的，在这个方法中取得context这个图形上下文然后用这个context来绘制，这种方法在逻辑上是没有问题的，但如果各位同学细心一点，应该会发现，复写了 **- (void)drawRect:(CGRect )rect** 这个方法后，在运行的的时候，当跳转到这个view的时候，运行内存会暴增80M左右，当项目工程过大的时候，本身工程运行内存就很大了，再爆增80M的情况下会有一定几率Crash。
 
-##效果图如下
+## 效果图如下
 
 ![示意图](https://github.com/xuxichen/OC-ECGView/raw/master/Demo.gif)
 
-##代码分析
+## 代码分析
 虽然这个是个很简单的demo，但为了让各位同学节省更多的时间，我还是写一下代码分析，让初学者或者急用的人能更快的使用这个demo到自己的项目中去
-####背景格子
-`<pre><code>
+#### 背景格子
+```
 //网格分为四种线画成，一种为0.2的横线，一种为0.2的竖线，一种为0.1的横线，一种为0.1的竖线
 - (void)drawGrid {
 
@@ -51,9 +51,11 @@
         pos_y += cell_squar;
     }
 }
-</code></pre>
-在上面这段代码中<pre><code></code>[self drawLineStartPoint:CGPointMake(pos_x, 1) toEndPoint:CGPointMake(pos_x, full_height) withLineWidth:0.1];</pre>调用的方法是下面这个方法
-<pre><code>
+```
+在上面这段代码中
+```[self drawLineStartPoint:CGPointMake(pos_x, 1) toEndPoint:CGPointMake(pos_x, full_height) withLineWidth:0.1];```
+调用的方法是下面这个方法
+```
 //绘制格子曲线
 - (void)drawLineStartPoint:(CGPoint)startPoint toEndPoint:(CGPoint)endPoint withLineWidth:(CGFloat)lineWidth {
     //格子不能用一个bezierpath画，因为会首尾相连，所以要重复创建多个bezierpath对象
@@ -64,12 +66,11 @@
     CAShapeLayer \*shapelayer = [CAShapeLayer layer];
     [self setShapelayerattribute:shapelayer withBezierpath:bezierpath];
 }
-</code></pre>
-
+```
 而这个方法中设置了bezierpath的相关属性和设置shapelayer相关属性你可以在代码中demo中按住command+左键跳转到这个方法里面查看相关属性的设置
-####绘制心电图折线
+#### 绘制心电图折线
 绘制心电图折线，则是根据传进来的数组来进行处理。然后把这个传进来的数组，按照七个七个的取出来添加到另外一个数组中去，（为什么是七个呢？其实随便多少个都行，只要不是大于数组或者小于零就行，但是为了图像显示的效果最好是六七个，最重要的是：***这个数一定要能整除你输入的数组的个数***）,然后根据这个小的数组，通过计算得到相对应的坐标，通过CAShapeLayer和UIBezierPath把这些坐标点绘制到屏幕上去。
-·<pre><code>
+```
 //绘制折线
 - (void)drawCurve {
     //清除掉bezierpath原来的所有坐标点
@@ -116,5 +117,5 @@
     }
     [self.layer addSublayer:self.shapelayer];
 }
-</code></pre>`
+```
 这段代码中的相关注释做的比较详细，就不做更多介绍了。
