@@ -123,6 +123,7 @@
             [self.lineArray removeObjectAtIndex:i];
         }
         for (int i=self.drawNumbers; i<self.drawNumbers+addNumber; i++) {
+            if (i>=_ecgArray.count-1) break;
             [self.lineArray addObject: _ecgArray[i]];
         }
     }
